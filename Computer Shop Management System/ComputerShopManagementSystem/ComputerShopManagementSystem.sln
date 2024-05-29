@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HardwareShopManagementSystem", "HardwareShopManagementSystem.csproj", "{F81EDC25-3AF3-4B98-93F7-E0958F17FFD2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerShopManagementSystem", "ComputerShopManagementSystem.csproj", "{F1D4155A-38D5-468C-A934-0C4CA29C8A1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F81EDC25-3AF3-4B98-93F7-E0958F17FFD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F81EDC25-3AF3-4B98-93F7-E0958F17FFD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F81EDC25-3AF3-4B98-93F7-E0958F17FFD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F81EDC25-3AF3-4B98-93F7-E0958F17FFD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1D4155A-38D5-468C-A934-0C4CA29C8A1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1D4155A-38D5-468C-A934-0C4CA29C8A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1D4155A-38D5-468C-A934-0C4CA29C8A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1D4155A-38D5-468C-A934-0C4CA29C8A1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F5E18A11-F758-4820-9C05-DA9D98158353}
+		SolutionGuid = {A0444F56-4032-4382-B153-3DA115B75DD7}
 	EndGlobalSection
 EndGlobal
