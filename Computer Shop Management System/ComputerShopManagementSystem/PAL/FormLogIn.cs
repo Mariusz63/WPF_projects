@@ -77,5 +77,11 @@ namespace ComputerShopManagementSystem.PAL
                 }
             }
         }
+
+        private void lblForgotPassword_Click(object sender, EventArgs e)
+        {
+            FormForgotPassword formForgotPassword = new FormForgotPassword();
+            formForgotPassword.ShowDialog();
+        }
     }
 }

@@ -83,6 +83,16 @@ namespace ComputerShopManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap change_password_icon_154438 {
+            get {
+                object obj = ResourceManager.GetObject("change_password_icon_154438", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap exit_close_cancel_icon_262072 {
             get {
                 object obj = ResourceManager.GetObject("exit_close_cancel_icon_262072", resourceCulture);
