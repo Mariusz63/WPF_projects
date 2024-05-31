@@ -63,6 +63,17 @@ namespace ComputerShopManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1458264592_laptop_computer_pc_device_notebook_netbook_internet_icon_icons_com_55334 {
+            get {
+                object obj = ResourceManager.GetObject("1458264592_laptop_computer_pc_device_notebook_netbook_internet_icon-icons.com_553" +
+                        "34", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _3844443_disable_eye_inactive_see_show_view_watch_110296 {
             get {
                 object obj = ResourceManager.GetObject("3844443-disable-eye-inactive-see-show-view-watch_110296", resourceCulture);
@@ -83,6 +94,26 @@ namespace ComputerShopManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap branding_envelope_paper_icon_193864 {
+            get {
+                object obj = ResourceManager.GetObject("branding_envelope_paper_icon_193864", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap category_icon_176162 {
+            get {
+                object obj = ResourceManager.GetObject("category_icon_176162", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap change_password_icon_154438 {
             get {
                 object obj = ResourceManager.GetObject("change_password_icon_154438", resourceCulture);
@@ -93,9 +124,79 @@ namespace ComputerShopManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dashboard_3624 {
+            get {
+                object obj = ResourceManager.GetObject("dashboard_3624", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dashboard_3624__1_ {
+            get {
+                object obj = ResourceManager.GetObject("dashboard_3624 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap exit_close_cancel_icon_262072 {
             get {
                 object obj = ResourceManager.GetObject("exit_close_cancel_icon_262072", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap group_profile_users_icon_icons_com_73540 {
+            get {
+                object obj = ResourceManager.GetObject("group-profile-users_icon-icons.com_73540", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap log_out_icon_icons_com_50106 {
+            get {
+                object obj = ResourceManager.GetObject("log-out_icon-icons.com_50106", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap product_delivery_icon_152013 {
+            get {
+                object obj = ResourceManager.GetObject("product_delivery_icon_152013", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap product_searching_icon_181876 {
+            get {
+                object obj = ResourceManager.GetObject("product_searching_icon_181876", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap report_document_finance_business_analysis_analytics_chart_icon_188615 {
+            get {
+                object obj = ResourceManager.GetObject("report_document_finance_business_analysis_analytics_chart_icon_188615", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

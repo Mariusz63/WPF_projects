@@ -52,6 +52,7 @@
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -118,6 +119,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="computer_pc_10894.ico" />
+    <None Include="Icons\log-out_icon-icons.com_50106.png" />
+    <None Include="Icons\group-profile-users_icon-icons.com_73540.png" />
+    <None Include="Icons\report_document_finance_business_analysis_analytics_chart_icon_188615.png" />
+    <None Include="Icons\product_delivery_icon_152013.png" />
+    <None Include="Icons\product_searching_icon_181876.png" />
+    <None Include="Icons\category_icon_176162.png" />
+    <None Include="Icons\branding_envelope_paper_icon_193864.png" />
+    <None Include="Icons\dashboard_3624 %281%29.png" />
+    <None Include="Icons\dashboard_3624.png" />
+    <None Include="Icons\1458264592_laptop_computer_pc_device_notebook_netbook_internet_icon-icons.com_55334.png" />
     <None Include="Icons\change_password_icon_154438.png" />
     <None Include="Icons\-remove-red-eye_90161.png" />
     <None Include="Icons\3844443-disable-eye-inactive-see-show-view-watch_110296.png" />

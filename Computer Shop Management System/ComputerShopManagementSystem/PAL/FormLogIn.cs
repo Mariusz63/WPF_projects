@@ -67,6 +67,7 @@ namespace ComputerShopManagementSystem.PAL
                 if(check)
                 {
                     FormMain formMain = new FormMain();
+                    formMain.name = txtUserName.Text.Trim();
                     formMain.ShowDialog();
                     EmptyBox();
                 }
