@@ -45,6 +45,7 @@ namespace ComputerShopManagementSystem.PAL
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             MovePanel(btnDashboard);
+            userControlBrand1.Visible = false;
             userControlDashboard1.Visible = true;
         }
 
@@ -52,6 +53,9 @@ namespace ComputerShopManagementSystem.PAL
         {
             MovePanel(btnBrand);
             userControlDashboard1.Visible = false;
+            userControlBrand1.EmptyBox();
+            userControlBrand1.Visible = true;
+
 
         }
 
@@ -59,6 +63,8 @@ namespace ComputerShopManagementSystem.PAL
         {
             MovePanel(btnCategory);
             userControlDashboard1.Visible = false;
+            userControlBrand1.Visible = false;
+
 
         }
 
@@ -66,6 +72,7 @@ namespace ComputerShopManagementSystem.PAL
         {
             MovePanel(btnProduct);
             userControlDashboard1.Visible = false;
+            userControlBrand1.Visible = false;
 
         }
 
@@ -73,6 +80,7 @@ namespace ComputerShopManagementSystem.PAL
         {
             MovePanel(btnOrders);
             userControlDashboard1.Visible = false;
+            userControlBrand1.Visible = false;
 
         }
 
@@ -80,6 +88,7 @@ namespace ComputerShopManagementSystem.PAL
         {
             MovePanel(btnReport);
             userControlDashboard1.Visible = false;
+            userControlBrand1.Visible = false;
 
         }
 
@@ -87,6 +96,7 @@ namespace ComputerShopManagementSystem.PAL
         {
             MovePanel(btnUsers);
             userControlDashboard1.Visible = false;
+            userControlBrand1.Visible = false;
 
         }
 

@@ -83,6 +83,12 @@
     <Compile Include="PAL\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="PAL\UserControlBrand.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PAL\UserControlBrand.Designer.cs">
+      <DependentUpon>UserControlBrand.cs</DependentUpon>
+    </Compile>
     <Compile Include="PAL\UserControlDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PAL\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\UserControlBrand.resx">
+      <DependentUpon>UserControlBrand.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PAL\UserControlDashboard.resx">
       <DependentUpon>UserControlDashboard.cs</DependentUpon>
@@ -128,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="computer_pc_10894.ico" />
+    <None Include="Icons\searchmagnifierinterfacesymbol1_79893.png" />
     <None Include="Icons\bagofmoney_5108.png" />
     <None Include="Icons\4105931-add-to-cart-buy-cart-sell-shop-shopping-cart_113919.png" />
     <None Include="Icons\log-out_icon-icons.com_50106.png" />

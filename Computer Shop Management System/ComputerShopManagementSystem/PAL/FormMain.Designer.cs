@@ -53,6 +53,7 @@
             this.btnDashboard = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.userControlDashboard1 = new ComputerShopManagementSystem.PAL.UserControlDashboard();
+            this.userControlBrand1 = new ComputerShopManagementSystem.PAL.UserControlBrand();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -187,6 +188,7 @@
             // 
             // pnlCenter
             // 
+            this.pnlCenter.Controls.Add(this.userControlBrand1);
             this.pnlCenter.Controls.Add(this.userControlDashboard1);
             this.pnlCenter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlCenter.Location = new System.Drawing.Point(220, 80);
@@ -345,6 +347,16 @@
             this.userControlDashboard1.Size = new System.Drawing.Size(780, 480);
             this.userControlDashboard1.TabIndex = 0;
             // 
+            // userControlBrand1
+            // 
+            this.userControlBrand1.BackColor = System.Drawing.Color.White;
+            this.userControlBrand1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlBrand1.Location = new System.Drawing.Point(0, 0);
+            this.userControlBrand1.Name = "userControlBrand1";
+            this.userControlBrand1.Size = new System.Drawing.Size(780, 480);
+            this.userControlBrand1.TabIndex = 0;
+            this.userControlBrand1.Visible = false;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -399,5 +411,6 @@
         private System.Windows.Forms.Panel pnlCenter;
         private System.Windows.Forms.Timer timerDateAndTime;
         private UserControlDashboard userControlDashboard1;
+        private UserControlBrand userControlBrand1;
     }
 }
