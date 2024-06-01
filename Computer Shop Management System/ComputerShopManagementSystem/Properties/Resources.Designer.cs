@@ -84,9 +84,29 @@ namespace ComputerShopManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _4105931_add_to_cart_buy_cart_sell_shop_shopping_cart_113919 {
+            get {
+                object obj = ResourceManager.GetObject("4105931-add-to-cart-buy-cart-sell-shop-shopping-cart_113919", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _remove_red_eye_90161 {
             get {
                 object obj = ResourceManager.GetObject("-remove-red-eye_90161", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bagofmoney_5108 {
+            get {
+                object obj = ResourceManager.GetObject("bagofmoney_5108", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -184,9 +204,29 @@ namespace ComputerShopManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap product_delivery_icon_1520131 {
+            get {
+                object obj = ResourceManager.GetObject("product_delivery_icon_1520131", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap product_searching_icon_181876 {
             get {
                 object obj = ResourceManager.GetObject("product_searching_icon_181876", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap product_searching_icon_1818761 {
+            get {
+                object obj = ResourceManager.GetObject("product_searching_icon_1818761", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

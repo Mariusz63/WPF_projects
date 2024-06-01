@@ -45,36 +45,49 @@ namespace ComputerShopManagementSystem.PAL
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             MovePanel(btnDashboard);
+            userControlDashboard1.Visible = true;
         }
 
         private void btnBrand_Click(object sender, EventArgs e)
         {
             MovePanel(btnBrand);
+            userControlDashboard1.Visible = false;
+
         }
 
         private void btnCategory_Click(object sender, EventArgs e)
         {
             MovePanel(btnCategory);
+            userControlDashboard1.Visible = false;
+
         }
 
         private void btnProduct_Click(object sender, EventArgs e)
         {
             MovePanel(btnProduct);
+            userControlDashboard1.Visible = false;
+
         }
 
         private void btnOrders_Click(object sender, EventArgs e)
         {
             MovePanel(btnOrders);
+            userControlDashboard1.Visible = false;
+
         }
 
         private void btnReport_Click(object sender, EventArgs e)
         {
             MovePanel(btnReport);
+            userControlDashboard1.Visible = false;
+
         }
 
         private void btnUsers_Click(object sender, EventArgs e)
         {
             MovePanel(btnUsers);
+            userControlDashboard1.Visible = false;
+
         }
 
         private void timerDateAndTime_Tick(object sender, EventArgs e)

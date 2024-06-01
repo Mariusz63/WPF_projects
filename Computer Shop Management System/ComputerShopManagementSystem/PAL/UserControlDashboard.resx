@@ -117,59 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="exit_close_cancel_icon_262072" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\exit_close_cancel_icon_262072.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="category_icon_176162" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\category_icon_176162.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="change_password_icon_154438" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\change_password_icon_154438.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dashboard_3624 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\dashboard_3624 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="-remove-red-eye_90161" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\-remove-red-eye_90161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4105931-add-to-cart-buy-cart-sell-shop-shopping-cart_113919" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\4105931-add-to-cart-buy-cart-sell-shop-shopping-cart_113919.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dashboard_3624" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\dashboard_3624.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="branding_envelope_paper_icon_193864" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\branding_envelope_paper_icon_193864.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="product_searching_icon_181876" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\product_searching_icon_181876.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3844443-disable-eye-inactive-see-show-view-watch_110296" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\3844443-disable-eye-inactive-see-show-view-watch_110296.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1458264592_laptop_computer_pc_device_notebook_netbook_internet_icon-icons.com_55334" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\1458264592_laptop_computer_pc_device_notebook_netbook_internet_icon-icons.com_55334.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="product_searching_icon_1818761" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\product_searching_icon_181876.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="log-out_icon-icons.com_50106" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\log-out_icon-icons.com_50106.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="product_delivery_icon_1520131" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\product_delivery_icon_152013.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="product_delivery_icon_152013" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\product_delivery_icon_152013.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="report_document_finance_business_analysis_analytics_chart_icon_188615" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\report_document_finance_business_analysis_analytics_chart_icon_188615.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="group-profile-users_icon-icons.com_73540" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\group-profile-users_icon-icons.com_73540.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bagofmoney_5108" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\bagofmoney_5108.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="gunaElipse4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>485, 17</value>
+  </metadata>
+  <metadata name="gunaElipse3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>602, 17</value>
+  </metadata>
+  <metadata name="gunaElipse2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>719, 17</value>
+  </metadata>
+  <metadata name="gunaElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>836, 17</value>
+  </metadata>
 </root>
