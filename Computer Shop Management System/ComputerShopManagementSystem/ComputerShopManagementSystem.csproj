@@ -89,6 +89,12 @@
     <Compile Include="PAL\UserControlBrand.Designer.cs">
       <DependentUpon>UserControlBrand.cs</DependentUpon>
     </Compile>
+    <Compile Include="PAL\UserControlCategory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PAL\UserControlCategory.Designer.cs">
+      <DependentUpon>UserControlCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="PAL\UserControlDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PAL\UserControlBrand.resx">
       <DependentUpon>UserControlBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\UserControlCategory.resx">
+      <DependentUpon>UserControlCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PAL\UserControlDashboard.resx">
       <DependentUpon>UserControlDashboard.cs</DependentUpon>

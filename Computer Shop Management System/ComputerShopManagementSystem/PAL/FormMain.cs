@@ -46,6 +46,7 @@ namespace ComputerShopManagementSystem.PAL
         {
             MovePanel(btnDashboard);
             userControlBrand1.Visible = false;
+            userControlCategory1.Visible = false;
             userControlDashboard1.Visible = true;
         }
 
@@ -53,6 +54,7 @@ namespace ComputerShopManagementSystem.PAL
         {
             MovePanel(btnBrand);
             userControlDashboard1.Visible = false;
+            userControlCategory1.Visible = false;
             userControlBrand1.EmptyBox();
             userControlBrand1.Visible = true;
 
@@ -64,6 +66,8 @@ namespace ComputerShopManagementSystem.PAL
             MovePanel(btnCategory);
             userControlDashboard1.Visible = false;
             userControlBrand1.Visible = false;
+            userControlCategory1.EmptyBox(); ;
+            userControlCategory1.Visible = true;
 
 
         }
@@ -73,6 +77,7 @@ namespace ComputerShopManagementSystem.PAL
             MovePanel(btnProduct);
             userControlDashboard1.Visible = false;
             userControlBrand1.Visible = false;
+            userControlCategory1.Visible = false;
 
         }
 
@@ -81,6 +86,7 @@ namespace ComputerShopManagementSystem.PAL
             MovePanel(btnOrders);
             userControlDashboard1.Visible = false;
             userControlBrand1.Visible = false;
+            userControlCategory1.Visible = false;
 
         }
 
@@ -89,6 +95,7 @@ namespace ComputerShopManagementSystem.PAL
             MovePanel(btnReport);
             userControlDashboard1.Visible = false;
             userControlBrand1.Visible = false;
+            userControlCategory1.Visible = false;
 
         }
 
@@ -97,6 +104,7 @@ namespace ComputerShopManagementSystem.PAL
             MovePanel(btnUsers);
             userControlDashboard1.Visible = false;
             userControlBrand1.Visible = false;
+            userControlCategory1.Visible = false;
 
         }
 
@@ -104,5 +112,7 @@ namespace ComputerShopManagementSystem.PAL
         {
             lblTimeAndDate.Text = DateTime.Now.ToString("dd-MMM-yyyy hh:mm:ss"); // can add 'tt' at end
         }
+
+
     }
 }
