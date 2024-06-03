@@ -70,13 +70,13 @@ namespace ComputerShopManagementSystem.PAL
             txtSearchBrandName.Clear();
             dgvBrand.Columns[0].Visible = false;
             Computer.Computer.DisplayAndSearch("SELECT * FROM Brand;", dgvBrand);
-            lblTotal.Text = dgvBrand.Rows.Count.ToString();
+            lblTotalNumber.Text = dgvBrand.Rows.Count.ToString();
         }
 
         private void txtSearchBrandName_TextChanged(object sender, EventArgs e)
         {
             Computer.Computer.DisplayAndSearch("SELECT * FROM Brand WHERE Brand_Name LIKE '%" + txtSearchBrandName.Text + "%'; ", dgvBrand);
-            lblTotal.Text = dgvBrand.Rows.ToString();
+            lblTotalNumber.Text = dgvBrand.Rows.ToString();
         }
 
         private void dgvBrand_CellClick(object sender, DataGridViewCellEventArgs e)

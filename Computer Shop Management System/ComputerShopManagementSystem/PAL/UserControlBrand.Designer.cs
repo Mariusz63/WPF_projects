@@ -41,7 +41,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tpManageBrand = new System.Windows.Forms.TabPage();
             this.lblTotalNumber = new System.Windows.Forms.Label();
-            this.lblTotal = new System.Windows.Forms.Label();
+            this.lblTotalText = new System.Windows.Forms.Label();
             this.dgvBrand = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -181,7 +181,7 @@
             // tpManageBrand
             // 
             this.tpManageBrand.Controls.Add(this.lblTotalNumber);
-            this.tpManageBrand.Controls.Add(this.lblTotal);
+            this.tpManageBrand.Controls.Add(this.lblTotalText);
             this.tpManageBrand.Controls.Add(this.dgvBrand);
             this.tpManageBrand.Controls.Add(this.txtSearchBrandName);
             this.tpManageBrand.Controls.Add(this.picSearch);
@@ -208,17 +208,17 @@
             this.lblTotalNumber.TabIndex = 0;
             this.lblTotalNumber.Text = "{?}";
             // 
-            // lblTotal
+            // lblTotalText
             // 
-            this.lblTotal.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblTotal.Location = new System.Drawing.Point(14, 364);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(44, 17);
-            this.lblTotal.TabIndex = 0;
-            this.lblTotal.Text = "Total: ";
+            this.lblTotalText.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblTotalText.AutoSize = true;
+            this.lblTotalText.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalText.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblTotalText.Location = new System.Drawing.Point(14, 364);
+            this.lblTotalText.Name = "lblTotalText";
+            this.lblTotalText.Size = new System.Drawing.Size(44, 17);
+            this.lblTotalText.TabIndex = 0;
+            this.lblTotalText.Text = "Total: ";
             // 
             // dgvBrand
             // 
@@ -500,7 +500,7 @@
         private System.Windows.Forms.PictureBox picSearch;
         private System.Windows.Forms.DataGridView dgvBrand;
         private System.Windows.Forms.Label lblTotalNumber;
-        private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Label lblTotalText;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Button btnChangeOptions;
         private System.Windows.Forms.ComboBox cmbStatusOptions;

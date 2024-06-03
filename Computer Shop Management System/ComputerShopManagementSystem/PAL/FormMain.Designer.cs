@@ -55,6 +55,7 @@
             this.userControlBrand1 = new ComputerShopManagementSystem.PAL.UserControlBrand();
             this.userControlDashboard1 = new ComputerShopManagementSystem.PAL.UserControlDashboard();
             this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
+            this.userControlProduct1 = new ComputerShopManagementSystem.PAL.UserControlProduct();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -328,6 +329,7 @@
             // 
             // pnlCenter
             // 
+            this.pnlCenter.Controls.Add(this.userControlProduct1);
             this.pnlCenter.Controls.Add(this.userControlCategory1);
             this.pnlCenter.Controls.Add(this.userControlBrand1);
             this.pnlCenter.Controls.Add(this.userControlDashboard1);
@@ -367,6 +369,16 @@
             // timerDateAndTime
             // 
             this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
+            // 
+            // userControlProduct1
+            // 
+            this.userControlProduct1.BackColor = System.Drawing.Color.White;
+            this.userControlProduct1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlProduct1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.userControlProduct1.Location = new System.Drawing.Point(0, 0);
+            this.userControlProduct1.Name = "userControlProduct1";
+            this.userControlProduct1.Size = new System.Drawing.Size(780, 480);
+            this.userControlProduct1.TabIndex = 0;
             // 
             // FormMain
             // 
@@ -424,5 +436,6 @@
         private UserControlDashboard userControlDashboard1;
         private UserControlBrand userControlBrand1;
         private UserControlCategory userControlCategory1;
+        private UserControlProduct userControlProduct1;
     }
 }

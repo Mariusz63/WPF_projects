@@ -101,6 +101,12 @@
     <Compile Include="PAL\UserControlDashboard.Designer.cs">
       <DependentUpon>UserControlDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="PAL\UserControlProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PAL\UserControlProduct.Designer.cs">
+      <DependentUpon>UserControlProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="PAL\FormForgotPassword.resx">
@@ -120,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PAL\UserControlDashboard.resx">
       <DependentUpon>UserControlDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\UserControlProduct.resx">
+      <DependentUpon>UserControlProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -146,6 +155,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="computer_pc_10894.ico" />
+    <None Include="Icons\browse_icon_149519.png" />
     <None Include="Icons\searchmagnifierinterfacesymbol1_79893.png" />
     <None Include="Icons\bagofmoney_5108.png" />
     <None Include="Icons\4105931-add-to-cart-buy-cart-sell-shop-shopping-cart_113919.png" />
