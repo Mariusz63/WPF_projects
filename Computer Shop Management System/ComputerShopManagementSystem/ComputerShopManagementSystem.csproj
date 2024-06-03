@@ -101,6 +101,12 @@
     <Compile Include="PAL\UserControlDashboard.Designer.cs">
       <DependentUpon>UserControlDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="PAL\UserControlOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PAL\UserControlOrder.Designer.cs">
+      <DependentUpon>UserControlOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="PAL\UserControlProduct.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PAL\UserControlDashboard.resx">
       <DependentUpon>UserControlDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\UserControlOrder.resx">
+      <DependentUpon>UserControlOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PAL\UserControlProduct.resx">
       <DependentUpon>UserControlProduct.cs</DependentUpon>
@@ -155,6 +164,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="computer_pc_10894.ico" />
+    <None Include="Icons\print-printer-tool-with-printed-paper-outlined-symbol_icon-icons.com_57772.png" />
+    <None Include="Icons\trash_bin_icon-icons.com_67981.png" />
+    <None Include="Icons\1486564407-plus-green_81521.png" />
     <None Include="Icons\browse_icon_149519.png" />
     <None Include="Icons\searchmagnifierinterfacesymbol1_79893.png" />
     <None Include="Icons\bagofmoney_5108.png" />

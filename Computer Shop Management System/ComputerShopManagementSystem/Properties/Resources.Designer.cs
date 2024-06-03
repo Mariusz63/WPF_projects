@@ -74,6 +74,16 @@ namespace ComputerShopManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1486564407_plus_green_81521 {
+            get {
+                object obj = ResourceManager.GetObject("1486564407-plus-green_81521", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _3844443_disable_eye_inactive_see_show_view_watch_110296 {
             get {
                 object obj = ResourceManager.GetObject("3844443-disable-eye-inactive-see-show-view-watch_110296", resourceCulture);
@@ -204,6 +214,26 @@ namespace ComputerShopManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap print_printer_tool_with_printed_paper_outlined_symbol_icon_icons_com_57772 {
+            get {
+                object obj = ResourceManager.GetObject("print-printer-tool-with-printed-paper-outlined-symbol_icon-icons.com_57772", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap print_printer_tool_with_printed_paper_outlined_symbol_icon_icons1 {
+            get {
+                object obj = ResourceManager.GetObject("print-printer-tool-with-printed-paper-outlined-symbol_icon-icons1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap product_delivery_icon_152013 {
             get {
                 object obj = ResourceManager.GetObject("product_delivery_icon_152013", resourceCulture);
@@ -257,6 +287,16 @@ namespace ComputerShopManagementSystem.Properties {
         internal static System.Drawing.Bitmap searchmagnifierinterfacesymbol1_79893 {
             get {
                 object obj = ResourceManager.GetObject("searchmagnifierinterfacesymbol1_79893", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trash_bin_icon_icons_com_67981 {
+            get {
+                object obj = ResourceManager.GetObject("trash_bin_icon-icons.com_67981", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
