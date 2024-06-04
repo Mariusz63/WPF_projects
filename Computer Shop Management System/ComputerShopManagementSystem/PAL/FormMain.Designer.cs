@@ -51,13 +51,14 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.pnlCenter = new System.Windows.Forms.Panel();
-            this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
+            this.userControlUser1 = new ComputerShopManagementSystem.PAL.UserControlUser();
             this.userControlOrder1 = new ComputerShopManagementSystem.PAL.UserControlOrder();
             this.userControlProduct1 = new ComputerShopManagementSystem.PAL.UserControlProduct();
             this.userControlCategory1 = new ComputerShopManagementSystem.PAL.UserControlCategory();
             this.userControlBrand1 = new ComputerShopManagementSystem.PAL.UserControlBrand();
             this.userControlDashboard1 = new ComputerShopManagementSystem.PAL.UserControlDashboard();
-            this.userControlUser1 = new ComputerShopManagementSystem.PAL.UserControlUser();
+            this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
+            this.userControlReport1 = new ComputerShopManagementSystem.PAL.UserControlReport();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -331,6 +332,7 @@
             // 
             // pnlCenter
             // 
+            this.pnlCenter.Controls.Add(this.userControlReport1);
             this.pnlCenter.Controls.Add(this.userControlUser1);
             this.pnlCenter.Controls.Add(this.userControlOrder1);
             this.pnlCenter.Controls.Add(this.userControlProduct1);
@@ -343,9 +345,13 @@
             this.pnlCenter.Size = new System.Drawing.Size(780, 480);
             this.pnlCenter.TabIndex = 0;
             // 
-            // timerDateAndTime
+            // userControlUser1
             // 
-            this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
+            this.userControlUser1.BackColor = System.Drawing.Color.White;
+            this.userControlUser1.Location = new System.Drawing.Point(9, 24);
+            this.userControlUser1.Name = "userControlUser1";
+            this.userControlUser1.Size = new System.Drawing.Size(747, 464);
+            this.userControlUser1.TabIndex = 2;
             // 
             // userControlOrder1
             // 
@@ -353,7 +359,7 @@
             this.userControlOrder1.Location = new System.Drawing.Point(0, 0);
             this.userControlOrder1.Name = "userControlOrder1";
             this.userControlOrder1.Size = new System.Drawing.Size(780, 480);
-            this.userControlOrder1.TabIndex = 1;
+            this.userControlOrder1.TabIndex = 0;
             this.userControlOrder1.Visible = false;
             // 
             // userControlProduct1
@@ -393,13 +399,18 @@
             this.userControlDashboard1.Size = new System.Drawing.Size(780, 480);
             this.userControlDashboard1.TabIndex = 0;
             // 
-            // userControlUser1
+            // timerDateAndTime
             // 
-            this.userControlUser1.BackColor = System.Drawing.Color.White;
-            this.userControlUser1.Location = new System.Drawing.Point(9, 24);
-            this.userControlUser1.Name = "userControlUser1";
-            this.userControlUser1.Size = new System.Drawing.Size(747, 464);
-            this.userControlUser1.TabIndex = 2;
+            this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
+            // 
+            // userControlReport1
+            // 
+            this.userControlReport1.BackColor = System.Drawing.Color.White;
+            this.userControlReport1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlReport1.Location = new System.Drawing.Point(0, 0);
+            this.userControlReport1.Name = "userControlReport1";
+            this.userControlReport1.Size = new System.Drawing.Size(780, 480);
+            this.userControlReport1.TabIndex = 0;
             // 
             // FormMain
             // 
@@ -460,5 +471,6 @@
         private UserControlProduct userControlProduct1;
         private UserControlOrder userControlOrder1;
         private UserControlUser userControlUser1;
+        private UserControlReport userControlReport1;
     }
 }
