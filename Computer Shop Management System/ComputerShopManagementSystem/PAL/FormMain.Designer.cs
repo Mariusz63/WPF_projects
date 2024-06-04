@@ -52,11 +52,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pnlCenter = new System.Windows.Forms.Panel();
             this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
+            this.userControlOrder1 = new ComputerShopManagementSystem.PAL.UserControlOrder();
             this.userControlProduct1 = new ComputerShopManagementSystem.PAL.UserControlProduct();
             this.userControlCategory1 = new ComputerShopManagementSystem.PAL.UserControlCategory();
             this.userControlBrand1 = new ComputerShopManagementSystem.PAL.UserControlBrand();
             this.userControlDashboard1 = new ComputerShopManagementSystem.PAL.UserControlDashboard();
-            this.userControlOrder1 = new ComputerShopManagementSystem.PAL.UserControlOrder();
+            this.userControlUser1 = new ComputerShopManagementSystem.PAL.UserControlUser();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -330,6 +331,7 @@
             // 
             // pnlCenter
             // 
+            this.pnlCenter.Controls.Add(this.userControlUser1);
             this.pnlCenter.Controls.Add(this.userControlOrder1);
             this.pnlCenter.Controls.Add(this.userControlProduct1);
             this.pnlCenter.Controls.Add(this.userControlCategory1);
@@ -344,6 +346,15 @@
             // timerDateAndTime
             // 
             this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
+            // 
+            // userControlOrder1
+            // 
+            this.userControlOrder1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlOrder1.Location = new System.Drawing.Point(0, 0);
+            this.userControlOrder1.Name = "userControlOrder1";
+            this.userControlOrder1.Size = new System.Drawing.Size(780, 480);
+            this.userControlOrder1.TabIndex = 1;
+            this.userControlOrder1.Visible = false;
             // 
             // userControlProduct1
             // 
@@ -382,14 +393,13 @@
             this.userControlDashboard1.Size = new System.Drawing.Size(780, 480);
             this.userControlDashboard1.TabIndex = 0;
             // 
-            // userControlOrder1
+            // userControlUser1
             // 
-            this.userControlOrder1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControlOrder1.Location = new System.Drawing.Point(0, 0);
-            this.userControlOrder1.Name = "userControlOrder1";
-            this.userControlOrder1.Size = new System.Drawing.Size(780, 480);
-            this.userControlOrder1.TabIndex = 1;
-            this.userControlOrder1.Visible = false;
+            this.userControlUser1.BackColor = System.Drawing.Color.White;
+            this.userControlUser1.Location = new System.Drawing.Point(9, 24);
+            this.userControlUser1.Name = "userControlUser1";
+            this.userControlUser1.Size = new System.Drawing.Size(747, 464);
+            this.userControlUser1.TabIndex = 2;
             // 
             // FormMain
             // 
@@ -449,5 +459,6 @@
         private UserControlCategory userControlCategory1;
         private UserControlProduct userControlProduct1;
         private UserControlOrder userControlOrder1;
+        private UserControlUser userControlUser1;
     }
 }

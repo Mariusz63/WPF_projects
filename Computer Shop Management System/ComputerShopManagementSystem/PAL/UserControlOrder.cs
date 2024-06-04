@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Computer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -68,11 +69,11 @@ namespace ComputerShopManagementSystem.PAL
         {
             richTextBox.Clear();
             richTextBox.Text += "\t     COMPUTER SHOP MANAGEMENT SYSTEM\n";
-            richTextBox.Text += "************************************************\n\n";
+            richTextBox.Text += "***************************************************************\n\n";
             richTextBox.Text += "   Date: "+ dtpDate.Text + "\n";
             richTextBox.Text += "   Name " + txtCustomerName.Text.Trim() + "\n";
             richTextBox.Text += "   Number " + mtbCustomerNumber.Text.Trim() + "\n";
-            richTextBox.Text += "************************************************\n\n";
+            richTextBox.Text += "***************************************************************\n\n";
             richTextBox.Text += "   Name\t\tRate\t\tQunatity\t\tTotal\n";
 
             for(int i = 0; i < dgvOrdersList.Columns.Count; i++)
@@ -84,7 +85,7 @@ namespace ComputerShopManagementSystem.PAL
                 richTextBox.Text += "\n";
             }
 
-            richTextBox.Text += "************************************************\n\n";
+            richTextBox.Text += "***************************************************************\n\n";
             richTextBox.Text += "\t\t\t\t\tTotal: $ " + txtTotalAmount.Text + "\n";
             richTextBox.Text += "\t\t\t\t\tPaid Amount: $ " + nudPaidAmount.Value + "\n";
             richTextBox.Text += "\t\t\t\t\tDue Amount: $ " + txtDueAmount.Text + "\n";
@@ -131,7 +132,7 @@ namespace ComputerShopManagementSystem.PAL
                             {
                                 int quantity = Convert.ToInt32(rows.Cells[2].Value.ToString());
                                 int total1 = Convert.ToInt32(rows.Cells[3].Value.ToString());
-                                quantity += Convert.ToInt32(nudDiscount.Value);
+                                quantity += Convert.ToInt32(nudQuantity.Value);
                                 total1 += total;
                                 rows.Cells[2].Value = quantity;
                                 rows.Cells[3].Value = total1;
@@ -250,7 +251,173 @@ namespace ComputerShopManagementSystem.PAL
             }
             else
             {
+                Order order = new Order(dtpDate.Value.Date, txtCustomerName.Text.Trim(), mtbCustomerNumber.Text, Convert.ToInt32(txtTotalAmount.Text), Convert.ToInt32(nudPaidAmount.Value),
+                    Convert.ToInt32(txtDueAmount.Text), Convert.ToInt32(nudDiscount.Value), Convert.ToInt32(txtGrandTotal.Text), cmbPaymentStatus.SelectedItem.ToString());
+                Computer.Computer.SaveOrder(order);
+                EmptyBox();
+            }
+        }
 
+        private void btnReceipt_Click(object sender, EventArgs e)
+        {
+            Receipt();
+            printPreviewDialog.Document = printDocument;
+            printDocument.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("pprnm", 285, 600);
+            printPreviewDialog.ShowDialog();
+        }
+
+        private void printDocument_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString(richTextBox.Text, new Font("Segoe UI", 6, FontStyle.Regular), Brushes.Black, new Point(10, 10));
+        }
+
+        private void tbRate_TextChanged(object sender, EventArgs e)
+        {
+            nudQuantity_ValueChanged(sender, e);
+        }
+
+        private void tpManageOrders_Enter(object sender, EventArgs e)
+        {
+            txtSearchCustomerName.Clear();
+            dgvOrdersList.Columns[0].Visible = false;
+            Computer.Computer.DisplayAndSearch("SELECT * FROM Orders; ", dgvOrdersList);
+            lblTotalNumber.Text = dgvOrdersList.Rows.Count.ToString();
+        }
+
+        private void txtSearchCustomerName_TextChanged(object sender, EventArgs e)
+        {
+            Computer.Computer.DisplayAndSearch("SELECT * FROM Orders WHERE Customer_Name LIKE '%" + txtSearchCustomerName.Text + "%'; ", dgvManageOrders);
+            lblTotalNumber.Text = dgvManageOrders.Rows.ToString();
+        }
+
+        private void dgvManageOrders_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex != -1)
+            {
+                DataGridViewRow row = dgvManageOrders.Rows[e.RowIndex];
+                id = row.Cells[0].Value.ToString();
+                dtpDateOptions.Text = row.Cells[1].Value.ToString();
+                txtCustomerNameOptions.Text = row.Cells[2].Value.ToString();
+                mtxtCustomerNumberOptions.Text = row.Cells[3].Value.ToString();
+                txtTotalAmountOptions.Text = row.Cells[4].ToString();
+                nudPaidAmountOptions.Value = Convert.ToInt32(row.Cells[5].Value.ToString());
+                txtDueAmountOptions.Text = row.Cells[6].Value.ToString();
+                nudDiscountOptions.Value = Convert.ToInt32(row.Cells[7].Value.ToString());
+                txtGrandTotalOptions.Text = row.Cells[8].Value.ToString();
+                cmbPaymentStatusOptions.SelectedItem = row.Cells[9].Value.ToString();
+                tcOrder.SelectedTab = tpOptions;
+            }
+        }
+
+        private void tpOptions_Enter(object sender, EventArgs e)
+        {
+            if(id == "")
+            {
+                tcOrder.SelectedTab = tpManageOrders;
+            }
+        }
+
+        private void tpOptions_Leave(object sender, EventArgs e)
+        {
+            EmptyBox1();
+        }
+
+        private void btnChangeOptions_Click(object sender, EventArgs e)
+        {
+            if(id == "")
+            {
+                MessageBox.Show("First select row from table", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (txtCustomerNameOptions.Text.Trim() == string.Empty)
+            {
+                MessageBox.Show("Please eneter customer name", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (!mtxtCustomerNumberOptions.MaskCompleted)
+            {
+                MessageBox.Show("Please eneter valid customer number", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (nudPaidAmountOptions.Value == 0)
+            {
+                MessageBox.Show("Please eneter paid amount", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (cmbPaymentStatusOptions.SelectedIndex == 0)
+            {
+                MessageBox.Show("Please select payment status", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else
+            {
+                Order order = new Order(dtpDateOptions.Value.Date, txtCustomerNameOptions.Text.Trim(), mtxtCustomerNumberOptions.Text, Convert.ToInt32(txtTotalAmountOptions.Text), 
+                    Convert.ToInt32(nudPaidAmountOptions.Value), Convert.ToInt32(txtDueAmountOptions.Text), Convert.ToInt32(nudDiscountOptions.Value), Convert.ToInt32(txtGrandTotalOptions.Text),
+                    cmbPaymentStatusOptions.SelectedItem.ToString());
+
+                Computer.Computer.SaveOrder(order);
+                EmptyBox1();
+                tcOrder.SelectedTab = tpManageOrders;
+            }
+        }
+
+        private void tpAddOrder_Enter(object sender, EventArgs e)
+        {
+            EmptyBox();
+        }
+
+        private void nudPaidAmountOptions_ValueChanged(object sender, EventArgs e)
+        {
+            txtDueAmountOptions.Text = (Convert.ToInt32(nudPaidAmountOptions.Value) - Convert.ToInt32(txtTotalAmountOptions.Text)).ToString();
+        }
+
+        private void nudDiscountOptions_ValueChanged(object sender, EventArgs e)
+        {
+            txtGrandTotalOptions.Text = (Convert.ToInt32(txtTotalAmountOptions.Text) - Convert.ToInt32(nudDiscountOptions.Text)).ToString();
+        }
+
+        private void txtTotalAmountOptions_TextChanged(object sender, EventArgs e)
+        {
+            nudPaidAmountOptions_ValueChanged(sender, e);
+            nudDiscountOptions_ValueChanged(sender, e);
+        }
+
+        private void btnRemoveOption_Click(object sender, EventArgs e)
+        {
+            if (id == "")
+            {
+                MessageBox.Show("First select row from table", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (txtCustomerNameOptions.Text.Trim() == string.Empty)
+            {
+                MessageBox.Show("Please eneter customer name", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (!mtxtCustomerNumberOptions.MaskCompleted)
+            {
+                MessageBox.Show("Please eneter valid customer number", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (nudPaidAmountOptions.Value == 0)
+            {
+                MessageBox.Show("Please eneter paid amount", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else if (cmbPaymentStatusOptions.SelectedIndex == 0)
+            {
+                MessageBox.Show("Please select payment status", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            else
+            {
+                DialogResult dialogResult = MessageBox.Show("Are you want to delete this product?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    Computer.Computer.RemoveOrder(id);
+                    EmptyBox1();
+                    tcOrder.SelectedTab = tpManageOrders;
+                }
             }
         }
     }

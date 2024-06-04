@@ -50,6 +50,7 @@ namespace ComputerShopManagementSystem.PAL
             userControlProduct1.Visible = false;
             userControlDashboard1.Visible = true;
             userControlOrder1.Visible = false;
+            userControlUser1.Visible = false;
             
         }
 
@@ -62,6 +63,7 @@ namespace ComputerShopManagementSystem.PAL
             userControlBrand1.EmptyBox();
             userControlBrand1.Visible = true;
             userControlOrder1.Visible = false;
+            userControlUser1.Visible = false;
 
         }
 
@@ -74,6 +76,7 @@ namespace ComputerShopManagementSystem.PAL
             userControlCategory1.EmptyBox(); ;
             userControlCategory1.Visible = true;
             userControlOrder1.Visible = false;
+            userControlUser1.Visible = false;
 
         }
 
@@ -86,6 +89,7 @@ namespace ComputerShopManagementSystem.PAL
             userControlProduct1.EmptyBox();
             userControlProduct1.Visible = true;
             userControlOrder1.Visible = false;
+            userControlUser1.Visible = false;
         }
 
         private void btnOrders_Click(object sender, EventArgs e)
@@ -97,6 +101,7 @@ namespace ComputerShopManagementSystem.PAL
             userControlCategory1.Visible = false;
             userControlOrder1.EmptyBox();
             userControlOrder1.Visible = false;
+            userControlUser1.Visible = false;
         }
 
         private void btnReport_Click(object sender, EventArgs e)
@@ -107,6 +112,7 @@ namespace ComputerShopManagementSystem.PAL
             userControlProduct1.Visible = false;
             userControlCategory1.Visible = false;
             userControlOrder1.Visible = false;
+            userControlUser1.Visible = false;
         }
 
         private void btnUsers_Click(object sender, EventArgs e)
@@ -117,13 +123,14 @@ namespace ComputerShopManagementSystem.PAL
             userControlProduct1.Visible = false;
             userControlCategory1.Visible = false;
             userControlOrder1.Visible = false;
+            userControlUser1.Visible = true;
+            userControlUser1.EmptyBox();
         }
 
         private void timerDateAndTime_Tick(object sender, EventArgs e)
         {
             lblTimeAndDate.Text = DateTime.Now.ToString("dd-MMM-yyyy hh:mm:ss"); // can add 'tt' at end
         }
-
 
     }
 }
