@@ -52,6 +52,7 @@ namespace ComputerShopManagementSystem.PAL
             userControlOrder1.Visible = false;
             userControlUser1.Visible = false;
             userControlReport1.Visible = false;
+            userControlDashboard1.Count();
             
         }
 

@@ -51,6 +51,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.pnlCenter = new System.Windows.Forms.Panel();
+            this.userControlReport1 = new ComputerShopManagementSystem.PAL.UserControlReport();
             this.userControlUser1 = new ComputerShopManagementSystem.PAL.UserControlUser();
             this.userControlOrder1 = new ComputerShopManagementSystem.PAL.UserControlOrder();
             this.userControlProduct1 = new ComputerShopManagementSystem.PAL.UserControlProduct();
@@ -58,7 +59,6 @@
             this.userControlBrand1 = new ComputerShopManagementSystem.PAL.UserControlBrand();
             this.userControlDashboard1 = new ComputerShopManagementSystem.PAL.UserControlDashboard();
             this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
-            this.userControlReport1 = new ComputerShopManagementSystem.PAL.UserControlReport();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -345,6 +345,15 @@
             this.pnlCenter.Size = new System.Drawing.Size(780, 480);
             this.pnlCenter.TabIndex = 0;
             // 
+            // userControlReport1
+            // 
+            this.userControlReport1.BackColor = System.Drawing.Color.White;
+            this.userControlReport1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlReport1.Location = new System.Drawing.Point(0, 0);
+            this.userControlReport1.Name = "userControlReport1";
+            this.userControlReport1.Size = new System.Drawing.Size(780, 480);
+            this.userControlReport1.TabIndex = 0;
+            // 
             // userControlUser1
             // 
             this.userControlUser1.BackColor = System.Drawing.Color.White;
@@ -402,15 +411,6 @@
             // timerDateAndTime
             // 
             this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
-            // 
-            // userControlReport1
-            // 
-            this.userControlReport1.BackColor = System.Drawing.Color.White;
-            this.userControlReport1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControlReport1.Location = new System.Drawing.Point(0, 0);
-            this.userControlReport1.Name = "userControlReport1";
-            this.userControlReport1.Size = new System.Drawing.Size(780, 480);
-            this.userControlReport1.TabIndex = 0;
             // 
             // FormMain
             // 

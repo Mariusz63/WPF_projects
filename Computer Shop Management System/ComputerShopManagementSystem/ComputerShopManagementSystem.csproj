@@ -228,6 +228,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="computer_pc_10894.ico" />
+    <Content Include="SQLCommand.txt" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
