@@ -74,7 +74,6 @@ namespace ComputerShopManagementSystem.PAL
                 else
                 {
                     MessageBox.Show("Username or password is incorrect", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 }
             }
         }

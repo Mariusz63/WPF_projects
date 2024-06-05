@@ -54,7 +54,7 @@ namespace ComputerShopManagementSystem.PAL
             cmbCategory.SelectedIndex = 0;
             cmbCategory.Items.Clear();
             cmbCategory.Items.Add("-- SELECT --");
-            Computer.Computer.BrandCategoryProduct("SELECT Brand_Name FROM Category WHERE Category_Status = 'Available' ORDER BY Category_Name;", cmbCategory);
+            Computer.Computer.BrandCategoryProduct("SELECT Category_Name FROM Category WHERE Category_Status = 'Available' ORDER BY Category_Name;", cmbCategory);
             cmbCategory.SelectedIndex = 0;
 
             cmbStatus.SelectedIndex = 0;
@@ -307,5 +307,6 @@ namespace ComputerShopManagementSystem.PAL
         {
             EmptyBox1();
         }
+
     }
 }

@@ -424,9 +424,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox10</rd:DefaultName>
           <Top>0.17639cm</Top>
-          <Left>11.05641cm</Left>
-          <Height>0.6cm</Height>
-          <Width>1.65333cm</Width>
+          <Left>10.96822cm</Left>
+          <Height>0.72347cm</Height>
+          <Width>1.74152cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -455,9 +455,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox11</rd:DefaultName>
           <Top>0.17639cm</Top>
-          <Left>12.74502cm</Left>
-          <Height>0.6cm</Height>
-          <Width>3.16146cm</Width>
+          <Left>12.65683cm</Left>
+          <Height>0.72347cm</Height>
+          <Width>3.24965cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -506,17 +506,17 @@
           <DataField>Orders_Id</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="Customer_Number">
-          <DataField>Customer_Number</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="Orders_Date">
+          <DataField>Orders_Date</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="Customer_Name">
           <DataField>Customer_Name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Orders_Date">
-          <DataField>Orders_Date</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
+        <Field Name="Customer_Number">
+          <DataField>Customer_Number</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Grand_Total">
           <DataField>Grand_Total</DataField>
@@ -525,11 +525,11 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataSet</rd:DataSetName>
-        <rd:SchemaPath>F:\Projekty\WPF_projects\Computer Shop Management System\ComputerShopManagementSystem\DataSet.xsd</rd:SchemaPath>
-        <rd:TableName>Orders</rd:TableName>
+        <rd:SchemaPath>D:\Uczelnia\WPF\WPF_projects\Computer Shop Management System\ComputerShopManagementSystem\DataSet.xsd</rd:SchemaPath>
+        <rd:TableName>Orders1</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>OrdersTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>Orders1TableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>

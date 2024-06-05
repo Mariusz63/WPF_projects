@@ -76,7 +76,7 @@ namespace ComputerShopManagementSystem.PAL
             richTextBox.Text += "***************************************************************\n\n";
             richTextBox.Text += "   Name\t\tRate\t\tQunatity\t\tTotal\n";
 
-            for(int i = 0; i < dgvOrdersList.Columns.Count; i++)
+            for(int i = 0; i < dgvOrdersList.Rows.Count; i++)
             {
                 for (int j = 0; j < dgvOrdersList.Columns.Count - 1; j++)
                 {

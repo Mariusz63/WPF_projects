@@ -50,10 +50,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tcReport.Controls.Add(this.tpReport);
             this.tcReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.tcReport.Location = new System.Drawing.Point(14, 13);
+            this.tcReport.Location = new System.Drawing.Point(10, 10);
+            this.tcReport.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tcReport.Name = "tcReport";
             this.tcReport.SelectedIndex = 0;
-            this.tcReport.Size = new System.Drawing.Size(718, 439);
+            this.tcReport.Size = new System.Drawing.Size(760, 460);
             this.tcReport.TabIndex = 0;
             // 
             // tpReport
@@ -66,9 +67,10 @@
             this.tpReport.Controls.Add(this.label15);
             this.tpReport.Controls.Add(this.label16);
             this.tpReport.Location = new System.Drawing.Point(4, 4);
+            this.tpReport.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tpReport.Name = "tpReport";
-            this.tpReport.Padding = new System.Windows.Forms.Padding(3);
-            this.tpReport.Size = new System.Drawing.Size(710, 411);
+            this.tpReport.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tpReport.Size = new System.Drawing.Size(752, 425);
             this.tpReport.TabIndex = 0;
             this.tpReport.Text = "Report";
             this.tpReport.UseVisualStyleBackColor = true;
@@ -80,9 +82,10 @@
             this.btnGenerateReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGenerateReport.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerateReport.ForeColor = System.Drawing.Color.White;
-            this.btnGenerateReport.Location = new System.Drawing.Point(56, 178);
+            this.btnGenerateReport.Location = new System.Drawing.Point(245, 259);
+            this.btnGenerateReport.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGenerateReport.Name = "btnGenerateReport";
-            this.btnGenerateReport.Size = new System.Drawing.Size(118, 38);
+            this.btnGenerateReport.Size = new System.Drawing.Size(177, 58);
             this.btnGenerateReport.TabIndex = 3;
             this.btnGenerateReport.Text = "Generate Report";
             this.btnGenerateReport.UseVisualStyleBackColor = false;
@@ -92,9 +95,10 @@
             // 
             this.dtpEndDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtpEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpEndDate.Location = new System.Drawing.Point(368, 119);
+            this.dtpEndDate.Location = new System.Drawing.Point(167, 201);
+            this.dtpEndDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpEndDate.Name = "dtpEndDate";
-            this.dtpEndDate.Size = new System.Drawing.Size(259, 21);
+            this.dtpEndDate.Size = new System.Drawing.Size(386, 28);
             this.dtpEndDate.TabIndex = 1;
             // 
             // label1
@@ -103,9 +107,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(365, 101);
+            this.label1.Location = new System.Drawing.Point(163, 173);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 17);
+            this.label1.Size = new System.Drawing.Size(99, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "End Date:";
             // 
@@ -113,9 +118,10 @@
             // 
             this.dtpStartDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtpStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpStartDate.Location = new System.Drawing.Point(56, 119);
+            this.dtpStartDate.Location = new System.Drawing.Point(167, 124);
+            this.dtpStartDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpStartDate.Name = "dtpStartDate";
-            this.dtpStartDate.Size = new System.Drawing.Size(259, 21);
+            this.dtpStartDate.Size = new System.Drawing.Size(386, 28);
             this.dtpStartDate.TabIndex = 1;
             // 
             // label15
@@ -124,9 +130,10 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label15.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label15.Location = new System.Drawing.Point(53, 101);
+            this.label15.Location = new System.Drawing.Point(163, 96);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(72, 17);
+            this.label15.Size = new System.Drawing.Size(107, 28);
             this.label15.TabIndex = 0;
             this.label15.Text = "Start Date:";
             // 
@@ -135,9 +142,10 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(110)))));
-            this.label16.Location = new System.Drawing.Point(3, 3);
+            this.label16.Location = new System.Drawing.Point(4, 5);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(76, 21);
+            this.label16.Size = new System.Drawing.Size(110, 32);
             this.label16.TabIndex = 0;
             this.label16.Text = "../Report";
             // 
@@ -147,12 +155,13 @@
             // 
             // UserControlReport
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.tcReport);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UserControlReport";
-            this.Size = new System.Drawing.Size(747, 464);
+            this.Size = new System.Drawing.Size(780, 480);
             this.tcReport.ResumeLayout(false);
             this.tpReport.ResumeLayout(false);
             this.tpReport.PerformLayout();

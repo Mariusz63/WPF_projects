@@ -33,5 +33,16 @@ namespace ComputerShopManagementSystem.Properties {
                 return ((string)(this["CSMSConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=Mariusz\\MSSQLSERVER01;Initial Catalog=CSMS;Integrated Security=True;E" +
+            "ncrypt=False")]
+        public string CSMSConnectionString1 {
+            get {
+                return ((string)(this["CSMSConnectionString1"]));
+            }
+        }
     }
 }
