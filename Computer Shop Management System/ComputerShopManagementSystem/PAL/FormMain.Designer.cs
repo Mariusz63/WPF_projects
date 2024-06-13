@@ -50,6 +50,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.pnlCenter = new System.Windows.Forms.Panel();
+            this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
             this.userControlReport1 = new ComputerShopManagementSystem.PAL.UserControlReport();
             this.userControlUser1 = new ComputerShopManagementSystem.PAL.UserControlUser();
             this.userControlOrder1 = new ComputerShopManagementSystem.PAL.UserControlOrder();
@@ -57,7 +58,6 @@
             this.userControlCategory1 = new ComputerShopManagementSystem.PAL.UserControlCategory();
             this.userControlBrand1 = new ComputerShopManagementSystem.PAL.UserControlBrand();
             this.userControlDashboard1 = new ComputerShopManagementSystem.PAL.UserControlDashboard();
-            this.timerDateAndTime = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -84,7 +84,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(330, 923);
+            this.panel1.Size = new System.Drawing.Size(299, 961);
             this.panel1.TabIndex = 0;
             // 
             // pnlMove
@@ -105,7 +105,7 @@
             this.btnLogOut.ForeColor = System.Drawing.Color.White;
             this.btnLogOut.Image = global::ComputerShopManagementSystem.Properties.Resources.log_out_icon_icons_com_50106;
             this.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogOut.Location = new System.Drawing.Point(18, 843);
+            this.btnLogOut.Location = new System.Drawing.Point(18, 881);
             this.btnLogOut.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(300, 62);
@@ -238,7 +238,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(34, 208);
+            this.label2.Location = new System.Drawing.Point(6, 208);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(293, 40);
@@ -250,7 +250,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(50, 162);
+            this.label1.Location = new System.Drawing.Point(29, 163);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(256, 45);
@@ -260,7 +260,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ComputerShopManagementSystem.Properties.Resources._1458264592_laptop_computer_pc_device_notebook_netbook_internet_icon_icons_com_55334;
-            this.pictureBox1.Location = new System.Drawing.Point(86, 35);
+            this.pictureBox1.Location = new System.Drawing.Point(72, 35);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(168, 108);
@@ -280,10 +280,10 @@
             this.panel2.Controls.Add(this.lblUsername);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(330, 0);
+            this.panel2.Location = new System.Drawing.Point(299, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1170, 123);
+            this.panel2.Size = new System.Drawing.Size(1201, 123);
             this.panel2.TabIndex = 0;
             // 
             // lblTimeAndDate
@@ -293,7 +293,7 @@
             this.lblTimeAndDate.AutoSize = true;
             this.lblTimeAndDate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblTimeAndDate.ForeColor = System.Drawing.Color.White;
-            this.lblTimeAndDate.Location = new System.Drawing.Point(1082, 35);
+            this.lblTimeAndDate.Location = new System.Drawing.Point(988, 35);
             this.lblTimeAndDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTimeAndDate.Name = "lblTimeAndDate";
             this.lblTimeAndDate.Size = new System.Drawing.Size(48, 40);
@@ -329,10 +329,10 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(151)))), ((int)(((byte)(196)))));
             this.panel3.Controls.Add(this.label4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(330, 843);
+            this.panel3.Location = new System.Drawing.Point(299, 881);
             this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1170, 80);
+            this.panel3.Size = new System.Drawing.Size(1201, 80);
             this.panel3.TabIndex = 0;
             // 
             // label4
@@ -358,11 +358,15 @@
             this.pnlCenter.Controls.Add(this.userControlBrand1);
             this.pnlCenter.Controls.Add(this.userControlDashboard1);
             this.pnlCenter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlCenter.Location = new System.Drawing.Point(330, 123);
+            this.pnlCenter.Location = new System.Drawing.Point(299, 123);
             this.pnlCenter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlCenter.Name = "pnlCenter";
-            this.pnlCenter.Size = new System.Drawing.Size(1170, 720);
+            this.pnlCenter.Size = new System.Drawing.Size(1201, 758);
             this.pnlCenter.TabIndex = 0;
+            // 
+            // timerDateAndTime
+            // 
+            this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
             // 
             // userControlReport1
             // 
@@ -371,7 +375,7 @@
             this.userControlReport1.Location = new System.Drawing.Point(0, 0);
             this.userControlReport1.Margin = new System.Windows.Forms.Padding(10);
             this.userControlReport1.Name = "userControlReport1";
-            this.userControlReport1.Size = new System.Drawing.Size(1170, 720);
+            this.userControlReport1.Size = new System.Drawing.Size(1201, 758);
             this.userControlReport1.TabIndex = 0;
             this.userControlReport1.Visible = false;
             // 
@@ -384,7 +388,7 @@
             this.userControlUser1.Location = new System.Drawing.Point(0, 0);
             this.userControlUser1.Margin = new System.Windows.Forms.Padding(10);
             this.userControlUser1.Name = "userControlUser1";
-            this.userControlUser1.Size = new System.Drawing.Size(1170, 720);
+            this.userControlUser1.Size = new System.Drawing.Size(1201, 758);
             this.userControlUser1.TabIndex = 0;
             this.userControlUser1.Visible = false;
             // 
@@ -396,7 +400,7 @@
             this.userControlOrder1.Location = new System.Drawing.Point(0, 0);
             this.userControlOrder1.Margin = new System.Windows.Forms.Padding(10);
             this.userControlOrder1.Name = "userControlOrder1";
-            this.userControlOrder1.Size = new System.Drawing.Size(1170, 720);
+            this.userControlOrder1.Size = new System.Drawing.Size(1201, 758);
             this.userControlOrder1.TabIndex = 0;
             this.userControlOrder1.Visible = false;
             // 
@@ -410,7 +414,7 @@
             this.userControlProduct1.Location = new System.Drawing.Point(0, 0);
             this.userControlProduct1.Margin = new System.Windows.Forms.Padding(10);
             this.userControlProduct1.Name = "userControlProduct1";
-            this.userControlProduct1.Size = new System.Drawing.Size(1170, 720);
+            this.userControlProduct1.Size = new System.Drawing.Size(1201, 758);
             this.userControlProduct1.TabIndex = 0;
             this.userControlProduct1.Visible = false;
             // 
@@ -422,7 +426,7 @@
             this.userControlCategory1.Location = new System.Drawing.Point(0, 0);
             this.userControlCategory1.Margin = new System.Windows.Forms.Padding(10);
             this.userControlCategory1.Name = "userControlCategory1";
-            this.userControlCategory1.Size = new System.Drawing.Size(1170, 720);
+            this.userControlCategory1.Size = new System.Drawing.Size(1201, 758);
             this.userControlCategory1.TabIndex = 0;
             this.userControlCategory1.Visible = false;
             // 
@@ -435,7 +439,7 @@
             this.userControlBrand1.Location = new System.Drawing.Point(0, 0);
             this.userControlBrand1.Margin = new System.Windows.Forms.Padding(10);
             this.userControlBrand1.Name = "userControlBrand1";
-            this.userControlBrand1.Size = new System.Drawing.Size(1170, 720);
+            this.userControlBrand1.Size = new System.Drawing.Size(1201, 758);
             this.userControlBrand1.TabIndex = 0;
             this.userControlBrand1.Visible = false;
             // 
@@ -447,29 +451,23 @@
             this.userControlDashboard1.Location = new System.Drawing.Point(0, 0);
             this.userControlDashboard1.Margin = new System.Windows.Forms.Padding(10);
             this.userControlDashboard1.Name = "userControlDashboard1";
-            this.userControlDashboard1.Size = new System.Drawing.Size(1170, 720);
+            this.userControlDashboard1.Size = new System.Drawing.Size(1201, 758);
             this.userControlDashboard1.TabIndex = 0;
-            // 
-            // timerDateAndTime
-            // 
-            this.timerDateAndTime.Tick += new System.EventHandler(this.timerDateAndTime_Tick);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1500, 923);
+            this.ClientSize = new System.Drawing.Size(1500, 961);
             this.Controls.Add(this.pnlCenter);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "0";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

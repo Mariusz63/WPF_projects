@@ -82,7 +82,7 @@ namespace ComputerShopManagementSystem.PAL
             cmbCategoryOptions.SelectedIndex = 0;
             cmbCategoryOptions.Items.Clear();
             cmbCategoryOptions.Items.Add("-- SELECT --");
-            Computer.Computer.BrandCategoryProduct("SELECT Brand_Name FROM Category WHERE Category_Status = 'Available' ORDER BY Category_Name;", cmbCategoryOptions);
+            Computer.Computer.BrandCategoryProduct("SELECT Catgory_Name FROM Category WHERE Category_Status = 'Available' ORDER BY Category_Name;", cmbCategoryOptions);
             cmbCategoryOptions.SelectedIndex = 0;
         }
 
